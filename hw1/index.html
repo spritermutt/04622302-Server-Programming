@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="utf-8" />
+       <meta content="width=device-width, initial-scale=1.0"
+             name="viewport" />
+       <meta content="Chusanapak Fongmanee 116630462001-4 66346CPE"
+             name="description" />
+       <title>
+              HW1 - Chusanapak Fongmanee 116630462001-4 66346CPE
+       </title>
+       <link href="css/style.css"
+             rel="stylesheet" />
+       <link href="https://fonts.googleapis.com"
+             rel="preconnect" />
+       <link crossorigin=""
+             href="https://fonts.gstatic.com"
+             rel="preconnect" />
+       <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&amp;display=swap"
+             rel="stylesheet" />
+</head>
+
+<body>
+       <div class="container">
+              <div class="header">
+                     <img alt=""
+                          class="logo"
+                          src="https://www.ciosh-thailand.com/img/logo-bsa.png" />
+                     <div class="text-container">
+                            <h1>
+                                   สมาคมผู้ตรวจสอบอาคาร
+                            </h1>
+                            <h2>
+                                   THE BUILDING INSPECTORS ASSOCIATION
+                            </h2>
+                            <h3>
+                                   ใบสมัครสมาชิก / ต่ออายุสมาชิก
+                            </h3>
+                     </div>
+              </div>
+
+              <div>
+                     <form>
+
+                            <fieldset id="contact">
+                                   <legend>
+                                          ข้อมูลส่วนตัว
+                                   </legend>
+                                   <div class="form-container">
+                                          <div class="form-group">
+                                                 <label for="id">
+                                                        รหัสสมาชิก (Member ID)
+                                                 </label>
+                                                 <input class="form-control"
+                                                        id="id"
+                                                        name="id"
+                                                        placeholder="123456"
+                                                        type="text" />
+                                                 <label for="profileimage">
+                                                        รูปภาพ
+                                                 </label>
+                                                 <input class="form-control"
+                                                        id="profileimage"
+                                                        name="profileimage"
+                                                        type="file"
+                                                        accept="image/*" />
+                                                 <label for="name">
+                                                        ชื่อ (Firstname)
+                                                 </label>
+                                                 <input class="form-control"
+                                                        id="name"
+                                                        name="name"
+                                                        placeholder="Chusanapak"
+                                                        type="text" />
+                                                 <label for="name">
+                                                        นามสกุล (Surname)
+                                                 </label>
+                                                 <input class="form-control"
+                                                        id="surname"
+                                                        name="surname"
+                                                        placeholder="Fongmanee"
+                                                        type="text" />
+                                          </div>
+                                          <div class="form-group ">
+                                                 <label for="birthdate">
+                                                        วันเกิด (Date Of Birth)
+                                                 </label>
+                                                 <input class="form-control"
+                                                        id="date"
+                                                        type="date" />
+                                                 <label for="age">
+                                                        อายุ (Age)
+                                                 </label>
+                                                 <input class="form-control"
+                                                        id="age"
+                                                        name="age"
+                                                        placeholder="20"
+                                                        min="0"
+                                                        max="100"
+                                                        type="number" />
+                                                 <label for="sex">
+                                                        เพศ (Sex)
+                                                 </label>
+                                                 <select name="sex">
+                                                        <option value=""
+                                                                selected
+                                                                disabled>กรุณาเลือก</option>
+                                                        <option value="Male">ชาย</option>
+                                                        <option value="Female">หญิง</option>
+                                                 </select>
+
+                                                 <label for="national">
+                                                        สัญชาติ (Nationality)
+                                                 </label>
+                                                 <input class="form-control"
+                                                        id="national"
+                                                        name="national"
+                                                        placeholder="Thai"
+                                                        type="text" />
+                                                 </input>
+                                                 </input>
+                                          </div>
+                                          <div class="form-group">
+                                                 <label for="agency">
+                                                        หน่วยงาน (Agency/Company)
+                                                 </label>
+                                                 <input class="form-control"
+                                                        id="agency"
+                                                        name="agency"
+                                                        placeholder="BSA"
+                                                        type="text" />
+                                                 <label for="bussinessType">
+                                                        ประเภทธุรกิจ (Bussiness Type)
+                                                 </label>
+                                                 <input class="form-control"
+                                                        id="bussinessType"
+                                                        name="bussinessType"
+                                                        placeholder="Industry"
+                                                        type="text" />
+                                          </div>
+                                          <fieldset>
+                                                 <legend>
+                                                        ที่อยู่บริษัท</legend>
+                                                 <div class="form-group">
+                                                        <label for="companyAddress">
+                                                               ที่อยู่บริษัท
+                                                        </label>
+                                                        <input class="form-control"
+                                                               id="companyAddress"
+                                                               name="companyAddress"
+                                                               placeholder="ที่อยู่บริษัท"
+                                                               type="text" />
+                                                        <label for="companyAddress">
+                                                               หมู่
+                                                        </label>
+                                                        <input class="form-control"
+                                                               id="companyAddress"
+                                                               name="companyAddress"
+                                                               placeholder="1"
+                                                               type="number" />
+                                                        <label for="companyAddress">
+                                                               ซอย
+                                                        </label>
+                                                        <input class="form-control"
+                                                               id="companyAddress"
+                                                               name="companyAddress"
+                                                               placeholder="ซอย"
+                                                               type="text" />
+                                                        <label for="companyAddress">
+                                                               ถนน
+                                                        </label>
+                                                        <input class="form-control"
+                                                               id="companyAddress"
+                                                               name="companyAddress"
+                                                               placeholder="ถนน"
+                                                               type="text" />
+                                                        <label for="companyAddress">
+                                                               ตำบล/แขวง
+                                                        </label>
+                                                        <input class="form-control"
+                                                               id="companyAddress"
+                                                               name="companyAddress"
+                                                               placeholder="แขวง"
+                                                               type="text" />
+                                                        <label for="companyAddress">
+                                                               อำเภอ/เขต
+                                                        </label>
+                                                        <input class="form-control"
+                                                               id="companyAddress"
+                                                               name="companyAddress"
+                                                               placeholder="เขต"
+                                                               type="text" />
+                                                        <label for="companyAddress">
+                                                               จังหวัด
+                                                        </label>
+                                                        <input class="form-control"
+                                                               id="companyAddress"
+                                                               name="companyAddress"
+                                                               placeholder="กรุงเทพ"
+                                                               type="text" />
+                                                        <label for="companyAddress">
+                                                               รหัสไปรษณีย์
+                                                        </label>
+                                                        <input class="form-control"
+                                                               id="companyAddress"
+                                                               name="companyAddress"
+                                                               placeholder="10110"
+                                                               type="text"
+                                                               pattern="[0-9]{5}" />
+                                                        <label for="companyAddress">
+                                                               โทรศัพท์มือถือ
+                                                        </label>
+                                                        <input class="form-control"
+                                                               id="companyAddress"
+                                                               name="companyAddress"
+                                                               placeholder="02-123-4567"
+                                                               type="tel" />
+                                                        <label for="companyAddress">
+                                                               โทรศัพท์บ้าน
+                                                        </label>
+                                                        <input class="form-control"
+                                                               id="companyAddress"
+                                                               name="companyAddress"
+                                                               placeholder="02-123-4567"
+                                                               type="tel" />
+                                                        <label for="companyAddress">
+                                                               โทรสาร
+                                                        </label>
+                                                        <input class="form-control"
+                                                               id="companyAddress"
+                                                               name="companyAddress"
+                                                               placeholder="02-123-4567"
+                                                               type="tel" />
+                                                        <label for="companyAddress">
+                                                               อีเมล์
+                                                        </label>
+                                                        <input class="form-control"
+                                                               id="companyAddress"
+                                                               name="companyAddress"
+                                                               placeholder="e.g example@gmail.com"
+                                                               type="email" />
+                                                 </div>
+                                          </fieldset>
+                                          <fieldset>
+                                                 <legend>
+                                                        ที่อยู่ปัจจุบัน</legend>
+                                                 <div class="form-group">
+                                                        <label for="Address">
+                                                               ที่อยู่ปัจจุบัน
+                                                        </label>
+                                                        <input class="form-control"
+                                                               id="Address"
+                                                               name="Address"
+                                                               placeholder="ที่อยู่ปัจจุบัน"
+                                                               type="text" />
+                                                        <label for="Address">
+                                                               หมู่
+                                                        </label>
+                                                        <input class="form-control"
+                                                               id="Address"
+                                                               name="Address"
+                                                               placeholder="1"
+                                                               type="number" />
+                                                        <label for="Address">
+                                                               ซอย
+                                                        </label>
+                                                        <input class="form-control"
+                                                               id="Address"
+                                                               name="Address"
+                                                               placeholder="ซอย"
+                                                               type="text" />
+                                                        <label for="Address">
+                                                               ถนน
+                                                        </label>
+                                                        <input class="form-control"
+                                                               id="Address"
+                                                               name="Address"
+                                                               placeholder="ถนน"
+                                                               type="text" />
+                                                        <label for="Address">
+                                                               ตำบล/แขวง
+                                                        </label>
+                                                        <input class="form-control"
+                                                               id="Address"
+                                                               name="Address"
+                                                               placeholder="แขวง"
+                                                               type="text" />
+                                                        <label for="Address">
+                                                               อำเภอ/เขต
+                                                        </label>
+                                                        <input class="form-control"
+                                                               id="Address"
+                                                               name="Address"
+                                                               placeholder="เขต"
+                                                               type="text" />
+                                                        <label for="Address">
+                                                               จังหวัด
+                                                        </label>
+                                                        <input class="form-control"
+                                                               id="Address"
+                                                               name="Address"
+                                                               placeholder="กรุงเทพ"
+                                                               type="text" />
+                                                        <label for="Address">
+                                                               รหัสไปรษณีย์
+                                                        </label>
+                                                        <input class="form-control"
+                                                               id="Address"
+                                                               name="Address"
+                                                               placeholder="10110"
+                                                               type="text"
+                                                               pattern="[0-9]{5}" />
+                                                        <label for="Address">
+                                                               โทรศัพท์มือถือ
+                                                        </label>
+                                                        <input class="form-control"
+                                                               id="Address"
+                                                               name="Address"
+                                                               placeholder="02-123-4567"
+                                                               type="tel" />
+                                                        <label for="Address">
+                                                               โทรศัพท์
+                                                        </label>
+                                                        <input class="form-control"
+                                                               id="Address"
+                                                               name="Address"
+                                                               placeholder="02-123-4567"
+                                                               type="tel" />
+                                                        <label for="Address">
+                                                               ID Line
+                                                        </label>
+                                                        <input class="form-control"
+                                                               id="Address"
+                                                               name="Address"
+                                                               placeholder="ID Line"
+                                                               type="text" />
+                                                        <label for="Address">
+                                                               อีเมล์
+                                                        </label>
+                                                        <input class="form-control"
+                                                               id="Address"
+                                                               name="Address"
+                                                               placeholder="e.g example@gmail.com"
+                                                               type="email" />
+                                                 </div>
+                                          </fieldset>
+                                   </div>
+                            </fieldset>
+                            <fieldset>
+                                   <legend>
+                                          สถานที่ติดต่อ
+                                   </legend>
+                                   <div class="form-container">
+                                          <div class="form-group">
+                                                 <input id="Company"
+                                                        name="contactaddress"
+                                                        type="radio"
+                                                        value="Company">
+                                                 <label for="Company"
+                                                        style="font-weight: normal;">
+                                                        ที่อยู่บริษัท (Company)
+                                                 </label>
+                                                 <input id="Home"
+                                                        name="contactaddress"
+                                                        type="radio"
+                                                        value="Home">
+                                                 <label for="Home"
+                                                        style="font-weight: normal;">
+                                                        ที่อยู่ปัจจุบัน (Home)
+                                                 </label>
+                                                 </input>
+                                                 </input>
+                                          </div>
+                                   </div>
+                            </fieldset>
+                            <fieldset class="radiotype">
+                                   <legend>
+                                          ประวัติการศึกษา
+                                   </legend>
+                                   <div class="form-container">
+                                          <div class="form-group">
+                                                 <div class="radio-group">
+
+                                                        <input class="form-control"
+                                                               id="HighestGraduated"
+                                                               name="HighestGraduated"
+                                                               type="radio" />
+                                                        <label for="HighestGraduated"
+                                                               style="font-weight: normal;">
+                                                               ปวช. (Vocational Certificate)
+                                                        </label>
+                                                 </div>
+                                                 <div class="radio-group">
+
+                                                        <input class="form-control"
+                                                               id="HigherGraduated"
+                                                               name="HighestGraduated"
+                                                               type="radio" />
+                                                        <label for="HigherGraduated"
+                                                               style="font-weight: normal;">
+                                                               ปวส. (High Vocational Certificate)
+                                                        </label>
+                                                 </div>
+                                                 <div class="radio-group">
+
+                                                        <input class="form-control"
+                                                               id="Bachelor"
+                                                               name="HighestGraduated"
+                                                               type="radio" />
+                                                        <label for="Bachelor"
+                                                               style="font-weight: normal;">
+                                                               ปริญญาตรี (Bachelor)
+                                                        </label>
+                                                        <div id="BachelorDisplay">
+                                                               <input class="form-control"
+                                                                      id="Bachelor"
+                                                                      name="Bachelor"
+                                                                      placeholder="คณะ"
+                                                                      type="text" />
+                                                               <input class="form-control"
+                                                                      id="Bachelor"
+                                                                      name="Bachelor"
+                                                                      placeholder="สาขา"
+                                                                      type="text" />
+                                                               <input class="form-control"
+                                                                      id="Bachelor"
+                                                                      name="Bachelor"
+                                                                      placeholder="มหาวิทยาลัย"
+                                                                      type="text" />
+                                                        </div>
+                                                 </div>
+                                                 <div class="radio-group">
+
+                                                        <input class="form-control"
+                                                               id="masterorhigher"
+                                                               name="HighestGraduated"
+                                                               type="radio" />
+                                                        <label for="masterorhigher"
+                                                               style="font-weight: normal;">
+                                                               ปริญญาโทหรือสูงกว่า (Master
+                                                               or Higher)
+                                                        </label>
+                                                        <div id="MasterDisplay">
+                                                               <input class="form-control"
+                                                                      id="masterorhigher"
+                                                                      name="masterorhigher"
+                                                                      placeholder="คณะ"
+                                                                      type="text" />
+                                                               <input class="form-control"
+                                                                      id="masterorhigher"
+                                                                      name="masterorhigher"
+                                                                      placeholder="สาขา"
+                                                                      type="text" />
+                                                               <input class="form-control"
+                                                                      id="masterorhigher"
+                                                                      name="masterorhigher"
+                                                                      placeholder="มหาวิทยาลัย"
+                                                                      type="text" />
+                                                        </div>
+                                                 </div>
+                                          </div>
+                                   </div>
+                            </fieldset>
+                            <fieldset class="radiotype">
+                                   <legend>
+                                          อาชีพ
+                                   </legend>
+                                   <div class="form-container">
+                                          <div class="form-group">
+                                                 <div class="radio-group">
+
+                                                        <input class="form-control"
+                                                               id="BuildingInspector"
+                                                               name="BuildingInspector"
+                                                               type="radio" />
+                                                        <label for="BuildingInspector"
+                                                               style="font-weight: normal;">
+                                                               ผู้ตรวจสอบอาคาร
+                                                        </label>
+
+                                                        <input class="form-control"
+                                                               id="BuildingInspectorDisplay"
+                                                               name="BuildingInspector"
+                                                               placeholder="เลขที่ใบอนุญาต"
+                                                               type="text" />
+                                                 </div>
+                                                 <div class="radio-group">
+
+                                                        <input class="form-control"
+                                                               id="Engineer"
+                                                               name="BuildingInspector"
+                                                               type="radio" />
+                                                        <label for="Engineer"
+                                                               style="font-weight: normal;">
+                                                               ผู้ตรวจสอบพลังงาน
+                                                        </label>
+                                                        <input class="form-control"
+                                                               id="EngineerDisplay"
+                                                               name="BuildingInspector"
+                                                               placeholder="เลขที่ใบอนุญาต"
+                                                               type="text" />
+                                                 </div>
+                                                 <div class="radio-group">
+                                                        <input class="form-control"
+                                                               id="power"
+                                                               name="BuildingInspector"
+                                                               type="radio" />
+                                                        <label for="power"
+                                                               style="font-weight: normal;">
+                                                               ผู้ตรวจสอบระบบไฟฟ้า
+                                                        </label>
+
+                                                        <input class="form-control"
+                                                               id="powerDisplay"
+                                                               name="BuildingInspector"
+                                                               placeholder="เลขที่ใบอนุญาต"
+                                                               type="text" />
+                                                 </div>
+
+                                                 <div class="radio-group">
+                                                        <input class="form-control"
+                                                               id="electric"
+                                                               name="BuildingInspector"
+                                                               type="radio" />
+
+                                                        <label for="electric"
+                                                               style="font-weight: normal;">
+                                                               ผู้ตรวจสอบเอกชน (โรงงาน)
+                                                        </label>
+                                                        <input class="form-control"
+                                                               id="electricDisplay"
+                                                               name="BuildingInspector"
+                                                               placeholder="เลขที่ใบอนุญาต"
+                                                               type="text" />
+                                                 </div>
+                                                 <div class="radio-group">
+
+                                                        <input class="form-control"
+                                                               id="othereng"
+                                                               name="BuildingInspector"
+                                                               type="radio" />
+                                                        <label for="othereng"
+                                                               style="font-weight: normal;">
+                                                               อื่นๆ
+                                                        </label>
+                                                        <input class="form-control"
+                                                               id="OtherEngDisplay"
+                                                               name="BuildingInspector"
+                                                               placeholder="อื่นๆ"
+                                                               type="text" />
+                                                 </div>
+                                                 <p
+                                                    style="font-size: larger;font-weight: bolder; text-align: center;justify-content: center; width: 70%;align-items: center; margin: 10px auto;color:var(--green)">
+                                                        ข้าพเจ้าขอรับรองว่าข้อความข้างต้นเป็นความจริงทุกประการ
+                                                        เมื่อได้เป็นสมาชิกของสมาคมผู้ตรวจสอบอาคาร
+                                                        แล้วข้าพเจ้าจะส่งเสริมกิจกรรมต่าง ๆ ของสมาคมฯ
+                                                        เพื่อให้เกิดประโยชน์สูงสุด
+                                                 </p>
+                                          </div>
+                                   </div>
+                            </fieldset>
+                            <fieldset class="radiotype">
+                                   <legend>
+                                          โดยข้าพเจ้ามีความประสงค์สมัครสมาชิกในประเภท ดังนี้
+                                   </legend>
+                                   <div class="form-container">
+                                          <div class="form-group">
+                                                 <div class="radio-group">
+
+                                                        <input class="form-control"
+                                                               id="people"
+                                                               name="member"
+                                                               type="radio" />
+                                                        <label for="people"
+                                                               style="font-weight: normal;">
+                                                               ประเภทบุคคล
+                                                        </label>
+                                                        <input class="form-control"
+                                                               id="moneypeople"
+                                                               name="membermoney"
+                                                               type="radio" />
+                                                        <label for="moneypeople"
+                                                               id="moneypeople"
+                                                               style="font-weight: normal;">
+                                                               รายปี 400 บาท
+                                                        </label>
+                                                        <input class="form-control"
+                                                               id="moneypeople5"
+                                                               name="membermoney"
+                                                               type="radio" />
+                                                        <label for="moneypeople5"
+                                                               id="moneypeople5"
+                                                               style="font-weight: normal;">
+                                                               ราย 5 ปี 1,450 บาท
+                                                        </label>
+                                                 </div>
+                                                 <div class="radio-group">
+
+                                                        <input class="form-control"
+                                                               id="company"
+                                                               name="member"
+                                                               type="radio" />
+                                                        <label for="company"
+                                                               style="font-weight: normal;">
+                                                               ประเภทนิติบุคคล
+                                                        </label>
+                                                        <input class="form-control"
+                                                               id="moneycompany"
+                                                               name="membermoney"
+                                                               type="radio" />
+                                                        <label for="moneycompany"
+                                                               id="moneycompany"
+                                                               style="font-weight: normal;">
+                                                               รายปี 3,000 บาท
+                                                        </label>
+                                                        <input class="form-control"
+                                                               id="moneycompany5"
+                                                               name="membermoney"
+                                                               type="radio" />
+                                                        <label for="moneycompany5"
+                                                               id="moneycompany"
+                                                               style="font-weight: normal;">
+                                                               ราย 5 ปี 13,500 บาท
+                                                        </label>
+                                                 </div>
+                                                 <div class="radio-group">
+
+                                                        <input class="form-control"
+                                                               id="people-merge"
+                                                               name="member"
+                                                               type="radio" />
+                                                        <label for="people-merge"
+                                                               style="font-weight: normal;">
+                                                               ประเภทบุคคลสมทบ
+                                                        </label>
+                                                        <input class="form-control"
+                                                               id="people-mergemoney"
+                                                               name="membermoney"
+                                                               type="radio" />
+                                                        <label for="people-mergemoney"
+                                                               id="people-mergemoney"
+                                                               style="font-weight: normal;">
+                                                               รายปี 300 บาท
+                                                        </label>
+                                                        <input class="form-control"
+                                                               id="people-mergemoney5"
+                                                               name="membermoney"
+                                                               type="radio" />
+                                                        <label for="people-mergemoney5"
+                                                               id="people-mergemoney"
+                                                               style="font-weight: normal;">
+                                                               ราย 5 ปี 1,000 บาท
+                                                        </label>
+                                                 </div>
+                                                 <div class="radio-group">
+
+                                                        <input class="form-control"
+                                                               id="company-merge"
+                                                               name="member"
+                                                               type="radio" />
+                                                        <label for="company-merge"
+                                                               style="font-weight: normal;">
+                                                               ประเภทนิติบุคคลสมทบ
+                                                        </label>
+                                                        <input class="form-control"
+                                                               id="company-mergemoney"
+                                                               name="membermoney"
+                                                               type="radio" />
+                                                        <label for="company-mergemoney"
+                                                               id="company-mergemoney"
+                                                               style="font-weight: normal;">
+                                                               รายปี 2,000 บาท
+                                                        </label>
+                                                        <input class="form-control"
+                                                               id="company-mergemoney5"
+                                                               name="membermoney"
+                                                               type="radio" />
+                                                        <label for="company-mergemoney5"
+                                                               id="company-mergemoney"
+                                                               style="font-weight: normal;">
+                                                               ราย 5 ปี 9,000 บาท
+                                                        </label>
+                                                 </div>
+                                                 <p
+                                                    style="font-size: larger;font-weight: bolder; text-align: center;justify-content: center; width: 70%;align-items: center; margin: 10px auto;color:var(--green)">
+                                                        **หมายเหตุ: ราคาดังกล่าวรวมค่าบัตรสมาชิก (
+                                                        สำหรับประเภทบุคคลและสมทบบุคคล )
+                                                 </p>
+                                          </div>
+                                   </div>
+                            </fieldset>
+                            <button type="submit"
+                                    class="btn">
+                                   Submit
+                            </button>
+
+                     </form>
+              </div>
+
+
+       </div>
+</body>
+
+</html>

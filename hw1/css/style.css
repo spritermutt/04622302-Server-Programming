@@ -1,0 +1,338 @@
+:root{
+    --green:#1F4529;
+    --light-green:#47663B;
+    --malt:#E8ECD7;
+    --cream:#EED3B1;
+    --darkgreen:#031911;
+}
+*{
+    font-family: "Noto Sans Thai", serif;
+ 
+}
+body{
+    background-color: var(--green);
+    }
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+.header>.logo{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.container {
+    background-color: var(--cream);
+
+}
+ .text-container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--green);
+ }
+
+ legend {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--green);
+
+}
+fieldset.radiotype .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+fieldset.radiotype input[type="text"] {
+    display: inline-block;
+    margin-left: 20px;
+    width: 30%; 
+    padding: 5px;
+    border: 1px solid var(--green);
+    border-radius: 4px;
+    font-size: 14px;
+        color: var(--green);
+}
+
+fieldset.radiotype p {
+    margin-top: 15px;
+    text-align: center;
+    color: var(--green);
+    font-size: 14px;
+}
+input[type=file]{
+    background-color: var(--green);
+    color: var(--cream);
+}
+input::file-selector-button {
+    font-weight: bold;
+    color: var(--cream);
+    padding: 0.5em;
+    border: 2px solid var(--malt);
+    background-color: var(--green);
+    border-radius: 3px;
+  }
+ 
+  .btn {
+    margin-top: 10px;
+    font-weight: bold;
+    padding: 0.5em;
+    border-radius: 3px;
+    background-image: linear-gradient(to right, var(--light-green) 0%, var(--green)  51%);
+    width: 100%;
+     text-align: center;
+     border: 2px solid var(--green);
+     text-transform: uppercase;
+     transition: 0.5s;
+     background-size: 200% auto;
+     color: var(--cream);            
+   }
+
+   .btn:hover {
+     background-position: right center;
+     color: var(--cream);            
+     text-decoration: none;
+   }
+  
+ label{
+    font-weight: bold;
+    color: var(--darkgreen);
+
+ }
+ ::placeholder{
+    color: var(--malt);
+     }
+#powerDisplay, #electricDisplay,#EngineerDisplay,#BuildingInspectorDisplay, #BachelorDisplay,#MasterDisplay,#OtherEngDisplay,#moneypeople,#moneypeople5,#moneycompany,#moneycompany5,#people-mergemoney,#people-mergemoney5,#company-mergemoney,#company-mergemoney5{
+    display: none;
+}
+#power:checked ~ #powerDisplay,
+#electric:checked ~ #electricDisplay,
+#Engineer:checked ~ #EngineerDisplay,
+#BuildingInspector:checked ~ #BuildingInspectorDisplay,
+#Bachelor:checked ~ #BachelorDisplay,
+#masterorhigher:checked ~ #MasterDisplay,
+#people:checked ~ #moneypeople , #people:checked~#moneypeople5,
+#company:checked ~ #moneycompany, #company:checked~#moneycompany5,
+#people-merge:checked ~ #people-mergemoney, #people-merge:checked~#people-mergemoney5,
+#company-merge:checked ~ #company-mergemoney, #company-merge:checked~#company-mergemoney5,
+#othereng:checked ~ #OtherEngDisplay{
+    display: flex;
+}
+#people:checked ~ #moneypeople , #people:checked~#moneypeople5,
+#company:checked ~ #moneycompany, #company:checked~#moneycompany5,
+#people-merge:checked ~ #people-mergemoney, #people-merge:checked~#people-mergemoney5,
+#company-merge:checked ~ #company-mergemoney, #company-merge:checked~#company-mergemoney5{
+    color:var(--green);
+    display: inline;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and below) */
+@media screen and (max-width: 767px) {
+    .container{
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    margin-top: 20px;
+        border-radius: 10px;
+        padding: 20px;
+                width: 80%;
+    }
+    .header>.logo{
+        width:20vw;
+        height: 20vw;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+
+        .text-container>h1{
+            font-size: 4vw;
+            margin: 0;
+            padding: 0;
+        }
+        .text-container>h2{
+            font-size: 2vw;
+            margin: 0;
+            padding: 0;
+        }
+        .text-container>h3{
+            font-size: 4vw;
+            margin: 5px;
+            padding: 5px;
+        }
+        fieldset#contact {
+            display: flex;
+            padding: 20px;
+            background-color: var(--malt);
+            border: 2px solid var(--light-green);
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+        fieldset{
+            border: 2px solid var(--light-green);
+            border-radius: 8px;
+        }
+        fieldset#contact input,
+        fieldset#contact select,
+        fieldset#contact textarea {
+            width: 100%;
+            padding: 8px;
+            border: 2px solid transparent;
+            border-radius: 4px;
+            font-size: 14px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        fieldset#contact input:focus,
+        fieldset#contact select:focus,
+        fieldset#contact textarea:focus {
+            outline: none !important;
+            border: 2px solid var(--light-green);
+        }
+}
+
+/* Medium devices (landscape tablets, 768px and below) */
+@media screen and (min-width: 768px ) and (max-width: 1200px) {
+    .container{
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    margin-top: 20px;
+        border-radius: 10px;
+        padding: 20px;
+                width: 80%;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+
+        .text-container>h1{
+            font-size: 2em;
+            margin: 0;
+            padding: 0;
+        }
+        .text-container>h2{
+            font-size: 1em;
+            margin: 0;
+            padding: 0;
+        }
+        .text-container>h3{
+            font-size: 1.5em;
+            margin: 5px;
+            padding: 5px;
+        }
+        fieldset#contact {
+            display: flex;
+            padding: 20px;
+            background-color: var(--malt);
+            border: 2px solid var(--light-green);
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+        fieldset{
+            border: 2px solid var(--light-green);
+            border-radius: 8px;
+        }
+        fieldset#contact input,
+        fieldset#contact select,
+        fieldset#contact textarea {
+            width: 100%; /* Make inputs span the full width of their 50% container */
+            padding: 8px;
+            border: 2px solid transparent;
+            border-radius: 4px;
+            font-size: 14px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        fieldset#contact input:focus,
+        fieldset#contact select:focus,
+        fieldset#contact textarea:focus {
+            outline: none !important;
+            border: 2px solid var(--light-green);
+        }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .container{
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    margin-top: 20px;
+        border-radius: 10px;
+        padding: 20px;
+                width: 70%;
+    }
+    
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .text-container {
+        text-align: right;
+        margin-left: auto;
+    }
+    
+    .text-container>h1,
+    .text-container>h2,
+    .text-container>h3 {
+        margin: 0;
+        padding: 0; 
+    }
+    
+    .text-container>h1 {
+        font-size: 2em;
+        font-weight: bold;
+    }
+    
+    .text-container>h2 {
+        font-size: 1em;
+    }
+    
+    .text-container>h3 {
+        font-size: 2em;
+        margin-top: 5px;
+    }
+    .text-container>h3::after{
+        content: " (Application Form)";
+    }
+    fieldset#contact {
+        display: flex;
+        padding: 20px;
+        background-color: var(--malt);
+        border: 2px solid var(--light-green);
+        border-radius: 8px;
+        box-sizing: border-box;
+    }
+    fieldset{
+        border: 2px solid var(--light-green);
+        border-radius: 8px;
+    }
+    fieldset#contact input,
+    fieldset#contact select,
+    fieldset#contact textarea {
+        width: 100%; /* Make inputs span the full width of their 50% container */
+        padding: 8px;
+        border: 2px solid transparent;
+        border-radius: 4px;
+        font-size: 14px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+    fieldset#contact input:focus,
+    fieldset#contact select:focus,
+    fieldset#contact textarea:focus {
+        outline: none !important;
+        border: 2px solid var(--light-green);
+    }
+    
+}
